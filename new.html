@@ -1,0 +1,67 @@
+<?php include "head.html"?>
+
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script>
+$(function(){
+	
+	
+
+		
+	$(".close").click(function(){		
+		$(".modal").fadeOut()
+		$(".youtube").attr("src","") /*모바일경우 재생되면 데이터 나가서 꺼줘야댐*/
+		})	
+		
+	
+})
+
+</script>
+
+<style>
+body,html{height:100%;}
+body{}
+body,ul{margin:0; padding:0}
+
+
+.modal{
+	position:fixed;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	background:rgba(0,0,0,0.3);
+	padding:30px;
+	box-sizing:border-box;
+	overflow:hidden;
+	
+	}
+.modal h2{color:white; text-align:center;}
+.modal h3{color:white;text-align:center;}
+.modal h4{color:white;text-align:center;}
+
+.close{
+	position:absolute;
+	right:0;
+	top:0;
+	}
+
+.youtube{
+	max-width:200px;
+	max-height:200px; /*비율땜에 동영상은 넣어줘야함*/	
+	}
+
+
+</style>
+
+
+<body>
+
+<div class="modal">
+	<h3>다니엘헤니가 추천하는</h3>
+    <h4>맥도날드 60년 노하우를 담은 프리미엄 수제 버거</h4>
+    <h2>그릴드 머쉬룸 버거</h2>
+	<iframe class="youtube" src="" allowfullscreen></iframe> <!--?autoplay=1 자동재생-->
+	<button class="close">close</button>
+
+
+</div>

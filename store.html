@@ -1,0 +1,93 @@
+<?php include "head.html" ?>
+
+<body>
+
+<script src="http://maps.google.com/maps/api/js"></script>
+<script src="js/gmap3.min.js"></script>
+<script src="js/store.js"></script>
+
+<?php include "header.html" ?>
+
+<?php include "sub.html"?>
+
+<div class="store_box">
+    <figure class="store_top_image"></figure>
+    <form class="store_form clearfix">
+                    
+        <label for="text" class="store_search">매장검색</label>
+        <input type="text" value="" class="store_search_box">
+        
+        <span class="store_br1"></span>            
+                        
+        <label for="text" class="store_service">이용가능서비스</label>
+        
+        
+        <div class="store_div_checkbox">
+            <div>
+                <label for="text">24시간</label>
+                <input type="checkbox">
+                
+                <label for="text">맥드라이브</label>
+                <input type="checkbox">
+            </div>
+            
+            <div>
+                <label for="text">맥모닝</label>
+                <input type="checkbox">
+                
+                <label for="text">맥카페</label>
+                <input type="checkbox">
+            </div>
+            
+            <div>                
+                <label for="text">맥딜리버리</label>
+                <input type="checkbox">
+                
+                <label for="text">시그니처버거</label>
+                <input type="checkbox">
+            </div>
+        </div>
+    </form>
+    
+    <div class="store_button">
+    	<button class="store_btn_clear">초기화</button>
+        <button class="store_btn_search">매장찾기</button>
+    </div>
+    
+    <div class="map"></div>
+    
+    <table class="store_table">
+    	<tr>
+        	<th class="store_table_title1">매장명</th>
+        	<th class="store_table_title2">24시간</th>
+        	<th class="store_table_title3">맥모닝</th>
+        	<th class="store_table_title4">맥카페</th>
+        	<th class="store_table_title5">맥딜리버리</th>
+        	<th class="store_table_title6">맥드라이브</th>
+        	<th class="store_table_title7">시그니처 버거</th>
+        	<th class="store_table_title8">맥런치</th>
+        </tr>
+        
+        <tr>
+        	<td>서울역점</td>
+            <td>●</td>
+            <td>●</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>●</td>
+            <td>●</td>
+        </tr>
+    </table>
+
+    
+</div><!--store_box-->
+
+
+
+
+
+
+<?php include "footer.html" ?>
+</body>
+</html>

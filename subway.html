@@ -1,0 +1,86 @@
+<?php include "head.html" ?>
+
+<body>
+
+<script src="http://maps.google.com/maps/api/js"></script>
+<script src="js/gmap3.min.js"></script>
+<script src="js/subway.js"></script>
+
+<?php include "header.html" ?>
+
+<?php include "sub.html"?>
+
+<div class="subway_box">
+	<figure class="store_top_image"></figure>
+    <form class="subway_form clearfix">
+            
+                <label for="text" class="subway_search">역 검색</label>
+                <input type="text" alt="" class="subway_search_box">
+            
+            	<span class="subwaybr"></span>
+                <label for="text" class="subway_search subway_service">노선 선택</label>
+                <select class="subway_select">
+                	<option>수도권</option>
+                	<option>부산</option>
+                	<option>대구</option>
+                	<option>광주</option>
+                	<option>대전</option>
+                </select>
+                
+    </form>
+    
+    <div class="subway_button">
+    	<button class="subway_btn_clear">초기화</button>
+        <button class="subway_btn_search">매장찾기</button>
+    </div>
+    
+    <div class="map"></div>
+    
+    <table class="subway_table">
+    	<tr>
+        	<th class="subway_table_title1">매장명</th>
+        	<th class="subway_table_title2">24시간</th>
+        	<th class="subway_table_title3">맥모닝</th>
+        	<th class="subway_table_title4">맥카페</th>
+        	<th class="subway_table_title5">맥딜리버리</th>
+        	<th class="subway_table_title6">맥드라이브</th>
+        	<th class="subway_table_title7">시그니처 버거</th>
+        	<th class="subway_table_title8">맥런치</th>
+        </tr>
+        
+        <tr>
+        	<td>서울역점</td>
+            <td>●</td>
+            <td>●</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>●</td>
+            <td>●</td>
+        </tr>
+    </table>
+
+    
+</div><!--subway_box-->
+
+
+
+
+
+
+<?php include "footer.html" ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
